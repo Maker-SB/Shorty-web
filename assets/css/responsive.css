@@ -1,0 +1,249 @@
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 991px) {
+    .curd-img {
+        top: -10%;
+        left: 15%;
+        line-height: 6.2rem;
+    }
+
+    .footer-nav {
+        margin-right: 2rem;
+    }
+}
+
+/* Mobile Menu  */
+@media (min-width: 767px) {
+    .menu ul {
+        display: flex !important;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+    .menu {
+        position: absolute;
+        width: 80%;
+        background: var(--very-darkblue);
+        z-index: 999;
+        text-align: center;
+        left: 10%;
+        right: 10%;
+        top: 10%;
+        border-radius: .8rem;
+    }
+
+    .menu-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    .menu-form a {
+        margin: 1rem 0;
+    }
+
+    .menu-form::before {
+        position: absolute;
+        content: '';
+        height: .1rem;
+        width: 100%;
+        margin: 0 auto;
+        top: -10%;
+        background: var(--light);
+    }
+
+    .fixed-header .menu {
+        position: absolute;
+        width: 80%;
+        background: var(--very-darkblue);
+        z-index: 999;
+        text-align: center;
+        left: 10%;
+        right: 10%;
+        top: 100%;
+        border-radius: .8rem;
+    }
+
+
+    .menu ul {
+        display: none;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+
+    .menu ul li a {
+        color: var(--light);
+    }
+
+    .logo-bars {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        cursor: pointer;
+        height: 3rem;
+        width: 3rem;
+        display: inline-block;
+    }
+
+    .logo-bars span {
+        height: 3px;
+        width: 2rem;
+        background: #000;
+        display: inline-block;
+        margin-bottom: .5rem;
+        position: absolute;
+        top: -10px;
+        right: 0;
+        border-radius: 8px;
+        transition: .3s linear;
+    }
+
+    .logo-bars span:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Header content  */
+    .header-content {
+        display: inline-block;
+        margin-bottom: 8rem;
+    }
+
+    .header-content-image img {
+        width: 140%;
+        height: 150%;
+        transform: translateX(0)
+    }
+
+    .header-content-text {
+        padding-top: 4rem;
+    }
+
+    .header-content-text p {
+        max-width: 80%;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 1rem;
+    }
+
+    .pricing-contact {
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+
+    .pricing-item p span {
+        display: none;
+    }
+
+    .resource-header p {
+        max-width: 85%;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+
+    .recource-curd {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 4rem;
+        position: relative;
+    }
+
+    .curd-item {
+        text-align: center;
+        margin: 2rem auto;
+        width: 80%;
+    }
+
+    .curd-img {
+        position: absolute;
+        top: -3.5rem;
+        left: calc(50% - 4rem);
+        line-height: 6.5rem;
+    }
+
+    .recource-curd::after {
+        position: absolute;
+        content: '';
+        z-index: 1;
+        top: 10%;
+        left: 48.5%;
+        width: .5rem;
+        height: 70%;
+        background: var(--cyan);
+    }
+
+    .resource-arrea {
+        padding-bottom: 10rem;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+    }
+
+    .socail-icone {
+        grid-row: 3;
+        grid-column: 1/3;
+    }
+
+    .f-logo a {
+        margin-top: 1rem;
+    }
+
+    .footer-nav {
+        margin-right: 0rem;
+        padding: 2rem 0;
+    }
+
+    .socail-icone ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 575px) {
+    .header-content-text {
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    .header-content-text p {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2rem 0 3rem 0;
+    }
+
+    .header-content-text h1 {
+        font-size: 4rem;
+        max-width: 85%;
+        margin: 0 auto;
+        line-height: 5rem;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-rows: 1fr 1fr;
+        row-gap: 1rem;
+    }
+
+    .pricing-items {
+        display: none;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
